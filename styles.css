@@ -30,6 +30,6 @@ figure:hover figcaption {
 }
 
 @keyframes showInfo {
-  from { transform: translateY(4em); opacity: 0; }
-  to   { transform: translateY(0em); opacity: 0.9; }
+  from { transform: translateY(4em); }
+  to   { transform: translateY(0em); }
 }
