@@ -4,29 +4,32 @@ figure {
   border: 2px solid #999;
   overflow: hidden;
 }
+
 figure img {
   width: 100%;
   height: 300px;
   background: #eee;
+  margin-bottom: -4em;
+  display: block;
 }
+
 figcaption {
+  box-sizing: border-box;
   height: 4em;
+  padding: 0.25em;
   transform: translateY(4em);
   background: rgba( 255, 255, 255, 0.75 );
   opacity: 0;
   transition: all 0.5s;
 }
+
 figure:hover figcaption {
   animation: showInfo 0.5s;
   transform: translateY(0em);
-  opacity: 1;
+  opacity: 0.9;
 }
 
 @keyframes showInfo {
   from { transform: translateY(4em); opacity: 0; }
-  to   { transform: translateY(0em); opacity: 0.91; }
-}
-@keyframes hideInfo {
-  from { transform: translateY(0em); opacity: 0.9; }
-  to   { transform: translateY(4em); opacity: 0; }
+  to   { transform: translateY(0em); opacity: 0.9; }
 }
