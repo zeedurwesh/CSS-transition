@@ -26,7 +26,7 @@ figcaption {
 figure:hover figcaption {
   animation: showInfo 0.5s;
   transform: translateY(0em);
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 @keyframes showInfo {
