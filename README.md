@@ -9,11 +9,13 @@ The `transition` property simply "prepares" an element for a style transition - 
 ```css
 figcaption {
   /* figcaption styles here */
-  transition: all 0.5s;
+  transition: all .5s;
 }
 ```
 
-These styles are only applied to the `figcaption` element when they're triggered - say on "hover". In this particular example, `transition` is triggered by hovering over the`figure` element, which is the *parent* of the `figcaption` element. The `transition` property is then applied to `all` the hover styles, over 0.5 seconds.
+The styles that are transitioned are only applied to the `figcaption` element when they're triggered.
+
+In this particular example, `transition` is triggered by **hovering** over the`figure` element (which is the *parent* of the `figcaption` element). The `transition` property is then applied to `all` the hover styles, over 0.5 seconds.
 
 ```css
 figure:hover figcaption {

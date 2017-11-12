@@ -34,7 +34,7 @@ figcaption {
   background: #fff;
   /* background: rgba( 255, 255, 255, 0 ); */
   opacity: 0;
-  transition: all 0.5s;
+  transition: all .5s;
 }
 
 /* 
@@ -43,8 +43,7 @@ figcaption {
   above is then applied to `all` these hover styles, over 0.5 seconds.
 */
 figure:hover figcaption {
-  animation: showInfo 0.5s;
   transform: translateY(0em);
-  /* background: rgba( 255, 255, 255, 0.78 ); */
+  /* background: rgba( 255, 255, 255, .78 ); */
   opacity: 0.78;
 }
