@@ -1,6 +1,6 @@
 # Lab 07 exercise
 
-A simple CSS animation for a common visual effect, unsing the `transition` property.
+A simple CSS animation for a common visual effect, using the `transition` property.
 
 ## How `transition` works
 
