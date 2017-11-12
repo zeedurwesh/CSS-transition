@@ -16,7 +16,7 @@ figure img {
 /* 
   styles the figcaption element when the page first loads. The 
   `transition` property simply "prepares" the element for a style 
-  transition - it does NOT trigger the transtion.
+  transition - it does NOT trigger the transition.
 
   `opacity` affects the WHOLE element - at `.78` text less is harsh when
   visible. If the alpha channel of the rgba `background` transitioned 
