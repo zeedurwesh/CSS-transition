@@ -13,23 +13,38 @@ figure img {
   display: block;
 }
 
+/* 
+  styles the figcaption element when the page first loads. The 
+  `transition` property simply "prepares" the element for a style 
+  transition - it does NOT trigger the transtion.
+
+  `opacity` affects the WHOLE element - at `.78` text less is harsh when
+  visible. If the alpha channel of the rgba `background` transitioned 
+  instead, the text would not be affected and remain 100% black.
+
+  A `height` of `4em` and `padding` of `.25em` will fit 3 lines of text 
+  with a line-height of 1.2em nicely. For more, change the values.
+*/
 figcaption {
   box-sizing: border-box;
   height: 4em;
-  padding: 0.25em;
+  line-height: 1.2em;
+  padding: .25em;
   transform: translateY(4em);
-  background: rgba( 255, 255, 255, 0.75 );
+  background: #fff;
+  /* background: rgba( 255, 255, 255, 0 ); */
   opacity: 0;
   transition: all 0.5s;
 }
 
+/* 
+  These styles are applied to the `figcaption` element when hovering 
+  over the`figure` element. The `transition` property on `figcaption` 
+  above is then applied to `all` these hover styles, over 0.5 seconds.
+*/
 figure:hover figcaption {
   animation: showInfo 0.5s;
   transform: translateY(0em);
-  opacity: 0.95;
-}
-
-@keyframes showInfo {
-  from { transform: translateY(4em); }
-  to   { transform: translateY(0em); }
+  /* background: rgba( 255, 255, 255, 0.78 ); */
+  opacity: 0.78;
 }
